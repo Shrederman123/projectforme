@@ -1,0 +1,8 @@
+.textstyle {
+	color: black;
+	font-family: fantasy;
+	font-size: 40px;
+}
+.registration input {
+	padding: 0px 10px 10px;
+}
