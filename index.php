@@ -1,15 +1,5 @@
 <?php
-$servername = "localhost";
-$database = "anton1ei_testbd";
-$username = "anton1ei_testbd";
-$password = "ter64mi32t!";
-// Создаем соединение
-$conn = mysqli_connect($servername, $username, $password, $database);
-// Проверяем соединение
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-mysqli_close($conn);
+include "connect.php";
 ?>
 
 <!DOCTYPE html>
@@ -25,17 +15,18 @@ mysqli_close($conn);
 	<h5 class="textstyle"> Hello world! </h5>
 
 	<div class="registration">
-		<input type="" name="login" value="Логин"> <br><br>
-		<input type="password" name="password" value="Пароль"> <br><br>
+		<input type="" name="loginreg" value="Логин"> <br><br>
+		<input type="password" name="passwordreg" value="Пароль"> <br><br>
 		
 	<p>
-		<input type="hidden" name="page_id" value="150">
+		<input type="hidden" name="page_idreg" value="150">
 		<input type="button" name="enter" value="Войти"><br>
 	</p>		
+</div>
 	
 	<div class="comment">
 		<input type="login" name="login" value="Логин"> <br><br>
-		<input type="text" name="text" value="Текст"> <br><br>
+		<input type="textl" name="text" value="Текст"> <br><br>
 		
 	<p>
 		<input type="hidden" name="page_id" value="150">
@@ -45,7 +36,7 @@ mysqli_close($conn);
 			<br>
 		<a href="registration.php">Регистрация</a>
 	</div>
-	писька+сиська
+	
 
 </body>
 </html>
